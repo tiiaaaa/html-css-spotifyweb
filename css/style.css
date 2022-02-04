@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .flex{
     display: flex;
 }
@@ -13,22 +17,29 @@ main section.left, section.right{
 }
 
 /* Sezione sinistra disposta in colonna */
+div#logo{
+    height: 8vh;
+    padding: .5rem 1rem;
+}
+
+div#logo img{
+    width: 80%;
+}
+
 section.left{
-    width: 15%;
+    width: 20%;
     flex-direction: column;
     justify-content: space-between;
     background-color: aqua;
 }
 
-/* section.left div.column-items{
-    flex-basis: 100%;
-    height: 100px;
-    background-color: brown;
-} */
+div.column-items li{
+    padding: .5rem 1rem;
+}
 
 /* Sezione destra disposta in riga */
 section.right{
-    width: 85%;
+    width: 80%;
     overflow-y: auto;
     background-color: bisque;
 }
@@ -48,7 +59,14 @@ section.right nav.main-nav{
     height: 6vh;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-color: coral;
+}
+
+ul.nav-bar li.nav-items{
+    display: inline;
+    margin-right: 1rem;
+    text-transform: uppercase;
 }
 
 /* Container delle varie row con le card */
@@ -85,13 +103,6 @@ div.text-img{
 }
 
 
-
-
-
-
-
-
-
 /* Footer */
 footer{
     height: 8vh;
@@ -107,3 +118,4 @@ footer{
     align-items: center;
     background-color:cadetblue;
 }
+
