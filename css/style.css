@@ -27,7 +27,7 @@ div#logo img{
 }
 
 section.left{
-    width: 15%;
+    width: 200px;
     flex-direction: column;
     justify-content: space-between;
     padding: .8rem 1rem;
@@ -88,7 +88,7 @@ li.left-btn a i.fa-user-circle{
 
 /* Sezione destra disposta in riga */
 section.right{
-    width: 85%;
+    width: calc(100% - 200px);
     overflow-y: auto;
     overflow-x: hidden;
     background-color: bisque;
@@ -137,6 +137,7 @@ section.right div.container{
 }
 
 div.container h3{
+    color: white;
     margin-bottom: 1rem;
 }
 
@@ -159,6 +160,15 @@ div.text-img{
     padding: .3rem 0;
 }
 
+div.text-img h5{
+    color: white;
+    margin-bottom: .3rem;
+}
+
+div.text-img p{
+    color: white;
+    font-size: .7rem;
+}
 
 /* Footer */
 footer{
