@@ -187,11 +187,15 @@ footer{
     background-color:cadetblue;
 }
 
-div.volume-bar{
+div.function-bar{
     width: 120px;
-    height: 5px;
+    height: 4px;
     border-radius: 5px;
-    background-color: blueviolet;
+    background-color: lightgray;
+}
+
+nav.right-nav, nav.left-nav a{
+    font-size: .8rem;
 }
 
 /* Parte sinistra del Footer */
@@ -215,11 +219,45 @@ footer nav.left-nav{
 }
 
 /*Parte del Nav centrale nel Footer */
-footer nav.center-nav div{
+nav.center-nav{
     width: 500px;
-    height: 50%;
+}
+
+div#center-nav-top, div#center-nav-bottom{
+    align-items: center;
+    padding: 0 .5rem;
     border: 1px solid black;
     background-color: burlywood;
+}
+
+/* Centrale Top */
+div#center-nav-top a{
+    color: white;
+    margin-right: 1rem;
+}
+
+footer nav.center-nav div#center-nav-top{
+    justify-content: center;
+    height: 70%;
+}
+
+div#center-nav-top a i.fa-play-circle{
+    font-size: 1.8rem;
+}
+
+/* Centrale Bottom */
+div#center-nav-bottom{
+    height: 30%;
+    justify-content: space-between;
+}
+
+div#center-nav-bottom div.timing-song{
+    width: 400px;
+}
+
+div#center-nav-bottom span.time{
+    color: white;
+    font-size: .6rem;
 }
 
 /*Parte del Nav destro nel Footer */
@@ -227,7 +265,6 @@ footer nav.right-nav{
     width: 250px;
     justify-content: space-around;
 }
-
 
 /* MEDIA QUERY */
 /* Primo break-point */
