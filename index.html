@@ -23,7 +23,7 @@
         <!-- Sezione disposta in colonna  -->
         <section class="left flex">
             <!-- blocco di elementi sopra -->
-            <div class="column-items">
+            <nav class="column-items">
                 <div id="logo" class="functions-column">
                     <img src="img/logo.svg" alt="Logo-Spotify">
                 </div>
@@ -54,15 +54,27 @@
                 </div>
                 
                 <div class="functions-column">
-                    <ul>
-                        <li class="left-btn">
-                            <h5>playlist</h5>
-                        </li>
-                        
+                    <div id="new-playlist">
+                        <h5>playlist</h5>
+
+                        <a href="#">
+                            <i class="fas fa-plus-square icon"></i>
+                            <span class="label-new-playlist">Crea playlist</span>
+                        </a>
+                    </div>
+
+                    <ul id="playslit-name">
                         <li class="left-btn">
                             <a href="#">
-                                <i class="fas fa-plus-square icon"></i>
-                                <span class="label">Crea playlist</span>
+                                <i class="fas fa-home icon"></i>
+                                <span class="label">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="left-btn">
+                            <a href="#">
+                                <i class="fas fa-home icon"></i>
+                                <span class="label">Home</span>
                             </a>
                         </li>
 
@@ -75,10 +87,10 @@
                     </ul>
                     
                 </div>                
-            </div>
+            </nav>
 
             <!-- Blocco di elementi sotto -->
-            <div class="cloumn-items">
+            <nav class="cloumn-items">
                 <ul>
                     <li class="left-btn">
                         <a href="#">
@@ -96,7 +108,7 @@
                     </li>
 
                 </ul>
-            </div>
+            </nav>
         </section>
 
         <!-- Sezione disposta in riga -->

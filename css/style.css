@@ -12,8 +12,8 @@ body{
     display: flex;
 }
 
-main section.left, section.right{
-    height: 92vh;
+main{
+    height: calc(100vh - 80px);
 }
 
 a{
@@ -34,7 +34,7 @@ section.left{
     background-color: black;
 }
 
-div.column-items li.left-btn{
+nav.column-items li.left-btn{
     padding: .3rem 0;
 }
 
@@ -54,12 +54,19 @@ div.functions-column{
     margin-bottom: .5rem;
 }
 
-li.left-btn h5{
+div#new-playlist h5{
     color: white;
+    text-transform: uppercase;
+    margin-bottom: .3rem;
 }
 
-li.left-btn a i.fa-plus-square{
-    font-size: 1.8rem;
+div#new-playlist span.label-new-playlist{
+    font-size: .8rem ;
+}
+
+a i.fa-plus-square{
+    font-size: 2rem;
+    vertical-align: middle;
 }
 
 /* Btn posti nella parte sinistra in basso */
@@ -139,7 +146,7 @@ div.text-img{
 
 /* Footer */
 footer{
-    height: 8vh;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
     background-color: blueviolet;
