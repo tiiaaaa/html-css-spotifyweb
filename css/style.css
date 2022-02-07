@@ -54,6 +54,10 @@ div.functions-column{
     margin-bottom: .5rem;
 }
 
+div#new-playlist{
+    padding: .3rem 0;;
+}
+
 div#new-playlist h5{
     color: white;
     text-transform: uppercase;
