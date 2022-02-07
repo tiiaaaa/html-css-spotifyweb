@@ -89,6 +89,8 @@ li.left-btn a i.fa-user-circle{
 /* Sezione destra disposta in riga */
 section.right{
     width: 85%;
+    overflow-y: auto;
+    overflow-x: hidden;
     background-color: bisque;
 }
 
