@@ -102,6 +102,16 @@ section.right div.main-header{
     background-color: brown;
 }
 
+div.main-header a{
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: .7rem 1rem;
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+}
+
 /* Nav-bar del Main */
 section.right nav.main-nav{
     height: 30px;
@@ -114,6 +124,7 @@ section.right nav.main-nav{
 ul.nav-bar li.nav-items{
     display: inline;
     margin-right: 1rem;
+    font-size: .7rem;
     text-transform: uppercase;
 }
 
