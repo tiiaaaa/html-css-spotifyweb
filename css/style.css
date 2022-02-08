@@ -150,7 +150,7 @@ div.wrap-card{
 }
 
 section.row div.card{
-    min-width: 120px;
+    min-width: 110px;
     width: calc(100% / 6);
     background-color: cornflowerblue;
 }
@@ -270,7 +270,11 @@ div#center-bottom div#time-bar{
 /*Parte del Nav destro nel Footer */
 footer section.cmd-right{
     width: 250px;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+section.cmd-right a{
+    margin-right: 5%;
 }
 
 /* MEDIA QUERY */
@@ -278,5 +282,13 @@ footer section.cmd-right{
 @media screen and (max-width: 992px){
     div.wrap-card{
         flex-wrap: wrap;
+    }
+}
+
+
+/* Secondo break-point */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    div.left-icon{
+        display: block;
     }
 }
