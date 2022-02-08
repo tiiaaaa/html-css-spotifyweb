@@ -171,7 +171,7 @@ div.text-img p{
 }
 
 /* Footer */
-footer{
+footer.player{
     height: 70px;
     justify-content: space-between;
     align-items: center;
@@ -181,8 +181,8 @@ footer{
 /* classe comune a tutte e tre le sezioni del nav nel footer */
 .footer-section{
     height: 100%;
-    padding: 0 .5rem;
     align-items: center;
+    padding: 0 .5rem;
     background-color:cadetblue;
 }
 
@@ -231,13 +231,11 @@ section.cmd-center{
     justify-content: center;
     align-content: center;
     gap: .5rem;
-    width: 500px;
 }
 
 div#center-top, div#center-bottom{
     align-items: center;
     gap: 1rem;
-    padding: 0 .5rem;
     border: 1px solid black;
     background-color: burlywood;
 }
