@@ -237,7 +237,7 @@ section.cmd-center{
 
 div#center-top, div#center-bottom{
     align-items: center;
-    gap: 1rem;
+    gap: 1.2rem;
     border: 1px solid black;
     background-color: burlywood;
 }
@@ -258,7 +258,7 @@ div#center-bottom span.time{
 }
 
 div#center-bottom div#time-bar{
-    width: 400px;
+    width: 500px;
 }
 
 /*Parte del Nav destro nel Footer */
