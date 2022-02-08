@@ -271,7 +271,7 @@ footer section.cmd-right{
 /* MEDIA QUERY */
 /* Primo break-point */
 @media screen and (max-width: 992px){
-    section.row{
+    div.wrap-card{
         flex-wrap: wrap;
     }
 }
