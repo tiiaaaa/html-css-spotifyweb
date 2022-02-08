@@ -179,33 +179,39 @@ footer{
 }
 
 /* classe comune a tutte e tre le sezioni del nav nel footer */
-.footer-nav{
+.footer-section{
     height: 100%;
     padding: 0 .5rem;
-    justify-content: space-between;
     align-items: center;
     background-color:cadetblue;
 }
 
 div.function-bar{
     width: 120px;
-    height: 4px;
+    height: 5px;
     border-radius: 5px;
     background-color: lightgray;
 }
 
-nav.right-nav, nav.left-nav a{
+div.function-bar div{
+    width: 20%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+section.cmd-right, section.cmd-left a{
     font-size: .8rem;
 }
 
 /* Parte sinistra del Footer */
-div#listening-music{
+div#album{
     width: 35px;
     height: 35px;
     margin-right: .5rem;
 }
 
-div#listening-music img{
+div#album img{
     width: 100%;
 }
 
@@ -214,54 +220,49 @@ div#title-song span{
     font-size: .6rem;
 }
 
-footer nav.left-nav{
+footer section.cmd-left{
+    justify-content: space-between;
     width: 200px;
 }
 
 /*Parte del Nav centrale nel Footer */
-nav.center-nav{
+section.cmd-center{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: .5rem;
     width: 500px;
 }
 
-div#center-nav-top, div#center-nav-bottom{
+div#center-top, div#center-bottom{
     align-items: center;
+    gap: 1rem;
     padding: 0 .5rem;
     border: 1px solid black;
     background-color: burlywood;
 }
 
 /* Centrale Top */
-div#center-nav-top a{
+div#center-top a{
     color: white;
-    margin-right: 1rem;
 }
 
-footer nav.center-nav div#center-nav-top{
-    justify-content: center;
-    height: 70%;
-}
-
-div#center-nav-top a i.fa-play-circle{
+div#center-top a i.fa-play-circle{
     font-size: 1.8rem;
 }
 
 /* Centrale Bottom */
-div#center-nav-bottom{
-    height: 30%;
-    justify-content: space-between;
-}
-
-div#center-nav-bottom div.timing-song{
-    width: 400px;
-}
-
-div#center-nav-bottom span.time{
+div#center-bottom span.time{
     color: white;
     font-size: .6rem;
 }
 
+div#center-bottom div#time-bar{
+    width: 400px;
+}
+
 /*Parte del Nav destro nel Footer */
-footer nav.right-nav{
+footer section.cmd-right{
     width: 250px;
     justify-content: space-around;
 }
