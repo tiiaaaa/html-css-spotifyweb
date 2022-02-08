@@ -135,18 +135,19 @@ ul.nav-bar li.nav-items{
 /* Container delle varie row con le card */
 section.right div.container{
     height: calc(100% - 90px);
+    flex-direction: column;
+    gap: 1.5rem;
     padding: 1.5rem 1rem;
 }
 
 div.container h3{
     color: white;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 /* Card */
 section.row div.card{
     width: 180px;
-    /* flex-shrink: 2; */
     margin-right: 1rem;
     background-color: cornflowerblue;
 }
