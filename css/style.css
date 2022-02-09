@@ -45,12 +45,12 @@ section.left{
     width: 200px;
     flex-direction: column;
     justify-content: space-between;
-    padding: .8rem 1rem;
+    padding: 1rem 0;
     background-color: black;
 }
 
 nav.column-items li.left-btn{
-    padding: .3rem 0;
+    padding: .3rem 1rem;
 } 
 
 li.left-btn a.icon img{
@@ -60,17 +60,18 @@ li.left-btn a.icon img{
 }
 
 li.left-btn a.label{
-    font-size: .7rem;
+    font-size: .8rem;
+    font-weight: 500;
     text-transform: capitalize;
 }
 
 /* Btn posti nella parte sinistra in alto */
-div.functions-column{
-    margin-bottom: .5rem;
+div#padding-logo{
+    padding: 0 1rem;
 }
 
 div#new-playlist{
-    padding: .3rem 0;
+    padding: .3rem 1rem;
 }
 
 div#new-playlist h5{
@@ -83,6 +84,10 @@ div#new-playlist span.label-new-playlist{
     font-size: .8rem ;
 }
 
+div.functions-column{
+    margin-bottom: .5rem;
+}
+
 a i.fa-plus-square{
     font-size: 2rem;
     vertical-align: middle;
@@ -93,15 +98,15 @@ li.left-btn h5{
     display: inline;
 }
 
-li.left-btn a i.fa-user-circle{
-    font-size: 1.4rem;
-}
-
-/* Sezione destra disposta in riga */
+/* SEZIONE DESTRA DEL MAIN DISPOSTA IN RIGA */
 section.right{
     width: calc(100% - 200px);
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+hr{
+    margin: 0 1rem;
 }
 
 /* Header del Main con button upgrade */
@@ -110,10 +115,11 @@ section.right div.main-header{
     height: 60px;
     position: sticky;
     top: 0;
+    z-index: 2;
     justify-content: flex-end;
     align-items: center;
     padding: .5rem;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .8);
 }
 
 div.main-header a{
@@ -136,7 +142,8 @@ ul.nav-bar li.nav-items{
     display: inline-block;
     list-style-type: none;
     margin-right: 1.5rem;
-    font-size: .7rem;
+    font-size: .8rem;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -162,7 +169,6 @@ section.row div.card{
     min-width: 120px;
     width: calc((100% / 6) - 10px);
     margin-right:  10px;
-    background-color: cornflowerblue;
 }
 
 /* Div top della Card con img all'interno */
@@ -240,7 +246,7 @@ div.time-indicator div.point-indicator{
     height: 15px;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 100%;
     display: none;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -264,6 +270,7 @@ div#album img{
 div#title-song span{
     display: block;
     font-size: .6rem;
+    color: lightgray;
 }
 
 footer section.cmd-left{
@@ -319,8 +326,18 @@ a:hover{
     color: white;
 }
 
+/* SECTION LEFT DEL MAIN */
+nav.column-items li.left-btn:hover{
+    border-left: 3px solid rgb(39, 216, 39);
+} 
+
+/* SECTION RIGHT DEL MAIN */
 .main-header a#hedr-btn:hover{
     font-size: 1rem;
+}
+
+li.nav-items:hover{
+    border-bottom: 3px solid rgb(39, 216, 39);
 }
 
 div.card:hover a.play-hover{
@@ -328,18 +345,22 @@ div.card:hover a.play-hover{
 }
 
 /* Nel Footer */
+div#title-song:hover span#title{
+    text-decoration: underline;
+    color: white;
+}
+
 a#play-music:hover i.fa-play-circle{
     font-size: 2rem;
 }
 
 div.function-bar:hover div.time-indicator{
-    background-color: rgb(0, 145, 0);
+    background-color: rgb(39, 216, 39);
 } 
 
 div.function-bar:hover div.point-indicator{
     display: block;
 }
-
 
 /* MEDIA QUERY */
 /* Primo break-point */
