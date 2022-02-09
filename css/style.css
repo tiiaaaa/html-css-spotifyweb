@@ -13,6 +13,10 @@ body{
     display: flex;
 }
 
+.position{
+    position: relative;
+}
+
 main{
     height: calc(100vh - 70px);
 }
@@ -57,6 +61,7 @@ li.left-btn a.icon img{
 
 li.left-btn a.label{
     font-size: .7rem;
+    text-transform: capitalize;
 }
 
 /* Btn posti nella parte sinistra in alto */
@@ -125,7 +130,6 @@ div.main-header a{
 section.right nav.main-nav{
     text-align: center;
     padding: 5px 0;
-    background-color: coral;
 }
 
 ul.nav-bar li.nav-items{
@@ -138,22 +142,26 @@ ul.nav-bar li.nav-items{
 
 /* Container delle varie row con le card */
 section.right div.container{
-    height: calc(100% - 90px);
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     padding: 1.5rem 1rem;
-}
-
-div.container h3{
     color: white;
-    margin-bottom: 10px;
 }
 
+section.row{
+    flex-direction: column;
+    gap: 10px;
+}
+
+section.row p{
+    font-size: .8rem;
+    color: lightgray;
+}
 /* Card */
 section.row div.card{
     min-width: 120px;
     width: calc((100% / 6) - 10px);
-    margin: 0 5px;
+    margin-right:  10px;
     background-color: cornflowerblue;
 }
 
@@ -162,9 +170,32 @@ div.card-img img{
     width: 100%;
 }
 
+div.card-img img.circle{
+    border-radius: 50%;
+}
+
+/* div.img-musk{
+    width: 165px;
+    height: 165px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+} */
+
+div.card-img a.play-hover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    display: none;
+}
 /* Div bottom della card con testo all interno */
 div.text-img{
     text-align: center;
+    padding: .5rem 0;
 }
 
 div.text-img h5{
@@ -194,17 +225,29 @@ footer.player{
 }
 
 div.function-bar{
-    width: 120px;
+    width: 140px;
     height: 5px;
     border-radius: 5px;
     background-color: lightgray;
 }
 
-div.function-bar div{
-    width: 20%;
+div.function-bar div.time-indicator{
+    width: 40%;
     height: 5px;
     border-radius: 5px;
     background-color: white;
+}
+
+div.time-indicator div.point-indicator{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: lightgray;
 }
 
 section.cmd-right, section.cmd-left a{
@@ -281,12 +324,40 @@ section.cmd-right a{
     margin-right: 5%;
 }
 
+/* EFFETTI DI HOVER */
+a:hover{
+    color: white;
+}
+
+.main-header a#hedr-btn:hover{
+    font-size: 1rem;
+}
+
+div.card:hover a.play-hover{
+    display: block;
+}
+
+/* Nel Footer */
+a#play-music:hover i.fa-play-circle{
+    font-size: 2rem;
+}
+
+div.function-bar:hover div.time-indicator{
+    background-color: rgb(0, 145, 0);
+} 
+
+div.function-bar:hover div.point-indicator{
+    display: block;
+}
+
+
 /* MEDIA QUERY */
 /* Primo break-point */
 @media screen and (max-width: 992px){
     section.row div.card{
         min-width: 120px;
         width: calc((100% / 4) - 10px);
+        margin-bottom: 1rem;
         background-color: cornflowerblue;
     }
 
