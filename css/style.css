@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(48, 46, 46);
 }
 
 .flex{
@@ -91,7 +92,6 @@ section.right{
     width: calc(100% - 200px);
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: bisque;
 }
 
 /* Header del Main con button upgrade */
@@ -103,7 +103,7 @@ section.right div.main-header{
     justify-content: flex-end;
     align-items: center;
     padding: .5rem;
-    background-color: brown;
+    background-color: rgba(0, 0, 0, .6);
 }
 
 div.main-header a{
@@ -118,8 +118,7 @@ div.main-header a{
 
 /* Nav-bar del Main */
 section.right nav.main-nav{
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     padding: 5px 0;
     background-color: coral;
 }
@@ -145,13 +144,10 @@ div.container h3{
 }
 
 /* Card */
-div.wrap-card{
-    gap: 10px;
-}
-
 section.row div.card{
-    min-width: 110px;
-    width: calc(100% / 6);
+    min-width: 120px;
+    width: calc((100% / 6) - 10px);
+    margin: 0 5px;
     background-color: cornflowerblue;
 }
 
@@ -280,15 +276,22 @@ section.cmd-right a{
 /* MEDIA QUERY */
 /* Primo break-point */
 @media screen and (max-width: 992px){
+    section.row div.card{
+        min-width: 120px;
+        width: calc((100% / 4) - 10px);
+        background-color: cornflowerblue;
+    }
+
     div.wrap-card{
         flex-wrap: wrap;
     }
 }
 
-
 /* Secondo break-point */
-@media screen and (min-width: 768px) and (max-width: 991px){
-    div.left-icon{
-        display: block;
+/* @media screen and (max-width: 768px){
+    section.row div.card{
+        min-width: 100px;
+        width: calc(100% / 2);
+        background-color: cornflowerblue;
     }
-}
+} */
