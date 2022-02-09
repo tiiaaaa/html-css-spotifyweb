@@ -360,4 +360,8 @@ section.cmd-right a{
     hr{
         display: none;
     }
+
+    section.cmd-left div.query-box{
+        display: block;
+    }
 }
