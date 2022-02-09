@@ -24,36 +24,47 @@
         <section class="left flex">
             <!-- blocco di elementi sopra -->
             <nav class="column-items">
-                <div id="logo" class="functions-column">
-                    <img src="img/logo.svg" alt="Logo-Spotify">
+                <div class="functions-column">
+                    <div id="logo-sptfy">
+                        <img src="img/logo.svg" alt="Logo-Spotify">
+                    </div>
+                    <div id="icon-sptfy">
+                        <img src="img/logo-small.svg" alt="Mini logo Spotify">
+                    </div>
                 </div>
 
                 <div class="functions-column">
                     <ul>
                         <li class="left-btn">
-                            <a href="#">
-                                <i class="fas fa-home icon"></i>
-                                <span class="label">Home</span>
+                            <a href="#" class="icon">
+                                <img src="img/home.svg" alt="Icona Home">
+                            </a>    
+                            <a href="#" class="label">
+                                home
                             </a>
                         </li>
                         
                         <li class="left-btn">
-                            <a href="#">
-                                <i class="fas fa-home icon"></i>
-                                <span class="label">Home</span>
+                            <a href="#" class="icon">
+                                <img src="img/search.svg" alt="Icona Search">
+                            </a>
+                            <a href="#" class="label">
+                                cerca
                             </a>
                         </li>
 
                         <li class="left-btn">
-                            <a href="#">
-                                <i class="fas fa-home icon"></i>
-                                <span class="label">Home</span>
+                            <a href="#" class="icon">
+                                <img src="img/libreria.svg" alt="Icona Libreria">
+                            </a>
+                            <a href="#" class="label">
+                                la tua libreria
                             </a>
                         </li>
                     </ul>
                 </div>
                 
-                <div class="functions-column">
+                <div id="playlist" class="functions-column">
                     <div id="new-playlist">
                         <h5>playlist</h5>
 
@@ -65,23 +76,32 @@
 
                     <ul id="playslit-name">
                         <li class="left-btn">
-                            <a href="#">
-                                <i class="fas fa-home icon"></i>
-                                <span class="label">Home</span>
+                            <a href="#" class="label">
+                                nome playlist
                             </a>
                         </li>
 
                         <li class="left-btn">
-                            <a href="#">
-                                <i class="fas fa-home icon"></i>
-                                <span class="label">Home</span>
+                            <a href="#" class="label">
+                                nome playlist
                             </a>
                         </li>
 
                         <li class="left-btn">
-                            <a href="#">
-                                <i class="fas fa-home icon"></i>
-                                <span class="label">Home</span>
+                            <a href="#" class="label">
+                                nome playlist
+                            </a>
+                        </li>
+
+                        <li class="left-btn">
+                            <a href="#" class="label">
+                                nome playlist
+                            </a>
+                        </li>
+
+                        <li class="left-btn">
+                            <a href="#" class="label">
+                                nome playlist
                             </a>
                         </li>
                     </ul>
@@ -90,20 +110,25 @@
             </nav>
 
             <!-- Blocco di elementi sotto -->
-            <nav class="cloumn-items">
+            <nav class="column-items">
                 <ul>
                     <li class="left-btn">
-                        <a href="#">
-                            <i class="fas fa-arrow-circle-down icon"></i>
-                            <span class="label">Installa app</span>
+                        <a href="#" class="icon">
+                            <img src="img/download.svg" alt="Icona Download">
+                        </a>    
+                        <a href="#" class="label">
+                            installa app
                         </a>
-                        <hr>
                     </li>
 
+                    <hr>
+
                     <li class="left-btn">
-                        <a href="#">
-                            <i class="fas fa-user-circle icon"></i>
-                            <h6 class="label">jhon doe</h6>
+                        <a href="#" class="icon">
+                            <img src="img/profile.svg" alt="Icona Home">
+                        </a>    
+                        <a href="#" id="user-label">
+                            <h5>Jhon Doe</h5>
                         </a>
                     </li>
 
@@ -283,19 +308,20 @@
     <!-- Parte sinistra del Nav nel Footer -->
         <section class="footer-section cmd-left flex">
 
-            <div id="album">
+            <div id="album" class="left-item">
                 <img src="img/sinister.jpeg" alt="Album in play">
             </div>
 
-            <div id="title-song">
+            <div id="title-song" class="left-item">
                 <h6>Sinister</h6>
                 <span>brano nome</span>
             </div>
             
-            <div class="left-icon">
+            <div class="left-item">
                 <a href="#"><i class="far fa-heart"></i></a>
             </div>
-            <div class="left-icon">
+
+            <div class="left-item">
                 <a href="#"><i class="far fa-folder"></i></a>
             </div>
         </section>

@@ -23,8 +23,18 @@ a{
 }
 
 /* Sezione sinistra disposta in colonna */
-div#logo img{
+div#logo-sptfy{
     width: 70%;
+}
+
+div#logo-sptfy img{
+    width: 100%;
+}
+
+div#icon-sptfy{
+    width: 20px;
+    height: 20px;
+    display: none;
 }
 
 section.left{
@@ -37,17 +47,16 @@ section.left{
 
 nav.column-items li.left-btn{
     padding: .3rem 0;
+} 
+
+li.left-btn a.icon img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
 
-li.left-btn a i.icon{
-    font-size: 1.2rem;
-    vertical-align: middle;
-    margin-right: .3rem;
-}
-
-li.left-btn a span.label{
-    font-size: .6rem;
-    vertical-align: middle;
+li.left-btn a.label{
+    font-size: .7rem;
 }
 
 /* Btn posti nella parte sinistra in alto */
@@ -56,7 +65,7 @@ div.functions-column{
 }
 
 div#new-playlist{
-    padding: .3rem 0;;
+    padding: .3rem 0;
 }
 
 div#new-playlist h5{
@@ -75,11 +84,7 @@ a i.fa-plus-square{
 }
 
 /* Btn posti nella parte sinistra in basso */
-hr{
-    margin: .5rem 0;
-}
-
-li.left-btn h6{
+li.left-btn h5{
     display: inline;
 }
 
@@ -124,8 +129,9 @@ section.right nav.main-nav{
 }
 
 ul.nav-bar li.nav-items{
-    display: inline;
-    margin-right: 1rem;
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 1.5rem;
     font-size: .7rem;
     text-transform: uppercase;
 }
@@ -207,9 +213,8 @@ section.cmd-right, section.cmd-left a{
 
 /* Parte sinistra del Footer */
 div#album{
-    width: 35px;
-    height: 35px;
-    margin-right: .5rem;
+    width: 30px;
+    height: 30px;
 }
 
 div#album img{
@@ -222,8 +227,11 @@ div#title-song span{
 }
 
 footer section.cmd-left{
-    justify-content: space-between;
     width: 200px;
+}
+
+footer div#title-song, div.left-item{
+    margin-right: 10px;
 }
 
 /*Parte del Nav centrale nel Footer */
@@ -236,7 +244,7 @@ section.cmd-center{
 }
 
 div#center-top, div#center-bottom{
-    width: 75%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -288,10 +296,68 @@ section.cmd-right a{
 }
 
 /* Secondo break-point */
-/* @media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     section.row div.card{
         min-width: 100px;
-        width: calc(100% / 2);
+        width: calc((100% / 2) - 10px);
+        margin-bottom: 1rem;
         background-color: cornflowerblue;
     }
-} */
+
+    footer section.cmd-left{
+        flex-basis: 25%;
+    }
+    
+    footer section.cmd-center{
+        min-width: 190px;
+        flex-basis: 50%;
+    }
+
+    footer section.cmd-right{
+        flex-basis: 25%;
+    }
+}
+
+/* Terzo break-point */
+@media screen and (max-width: 576px){
+    section.left{
+        width: 40px;
+        align-items: center;
+        padding: 8px 5px;
+    }
+
+    div#logo-sptfy{
+        display: none;
+    }
+
+    div#icon-sptfy{
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+
+    section.right{
+        width: calc(100% - 40px);
+    }
+
+    a#user-label{
+        display: none;
+    }
+
+    li.left-btn a.icon img{
+        width: 30px;
+        height: 30px;
+    }
+
+    a.label{
+        display: none;
+    }
+
+    div#playlist{
+        display: none;
+    }
+
+    hr{
+        display: none;
+    }
+}
