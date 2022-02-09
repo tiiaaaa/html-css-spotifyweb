@@ -316,6 +316,10 @@ section.cmd-right a{
     footer section.cmd-right{
         flex-basis: 25%;
     }
+
+    section.cmd-left div.query-box{
+        display: block;
+    }
 }
 
 /* Terzo break-point */
@@ -359,9 +363,5 @@ section.cmd-right a{
 
     hr{
         display: none;
-    }
-
-    section.cmd-left div.query-box{
-        display: block;
     }
 }
