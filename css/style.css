@@ -369,7 +369,6 @@ div.function-bar:hover div.point-indicator{
         min-width: 120px;
         width: calc((100% / 4) - 10px);
         margin-bottom: 1rem;
-        background-color: cornflowerblue;
     }
 
     div.wrap-card{
@@ -383,7 +382,6 @@ div.function-bar:hover div.point-indicator{
         min-width: 100px;
         width: calc((100% / 2) - 10px);
         margin-bottom: 1rem;
-        background-color: cornflowerblue;
     }
 
     footer section.cmd-left{
